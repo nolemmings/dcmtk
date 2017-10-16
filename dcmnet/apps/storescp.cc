@@ -879,7 +879,7 @@ int main(int argc, char *argv[])
 
     if (cmd.findOption("--exec-on-eostudy"))
     {
-      app.checkConflict("--exec-on-eostudy", "--fork", opt_forkMode);
+      // app.checkConflict("--exec-on-eostudy", "--fork", opt_forkMode);
       app.checkConflict("--exec-on-eostudy", "--inetd", opt_inetd_mode);
       app.checkDependence("--exec-on-eostudy", "--sort-conc-studies, --sort-on-study-uid or --sort-on-patientname", opt_sortStudyMode != ESM_None );
       app.checkValue(cmd.getValue(opt_execOnEndOfStudy));
